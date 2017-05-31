@@ -28,7 +28,7 @@ export class ProductListComponent implements OnInit
     {
         "productId": 2,
         "productName": "Garden Cart",
-        "productCode": "GDN-0024",
+        "productCode": "GDN-0025",
         "releaseDate": "March 18, 2016",
         "description": "15 gallon capacity rolling garden cart",
         "price": 32.99,
