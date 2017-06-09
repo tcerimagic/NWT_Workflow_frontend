@@ -1,0 +1,1 @@
+//# sourceMappingURL=competition-list.component.js.map
