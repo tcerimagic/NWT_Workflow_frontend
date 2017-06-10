@@ -7,16 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
+var CommonModule = (function () {
+    function CommonModule() {
     }
-    return AppRoutingModule;
+    return CommonModule;
 }());
-AppRoutingModule = __decorate([
+CommonModule = __decorate([
     core_1.NgModule({
         imports: [],
         declarations: [],
     })
-], AppRoutingModule);
-exports.AppRoutingModule = AppRoutingModule;
-//# sourceMappingURL=app.routing.js.map
+], CommonModule);
+exports.CommonModule = CommonModule;
+//# sourceMappingURL=common.module.js.map

@@ -4,4 +4,4 @@ import { NgModule } from '@angular/core';
   imports: [],
   declarations: [],
 })
-export class CompetitionModule { }
+export class ApplicantModule { }
