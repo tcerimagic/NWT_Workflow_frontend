@@ -8,8 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var http_1 = require("@angular/http");
+var app_routing_module_1 = require("./app-routing.module");
+var shared_module_1 = require("./shared/shared.module");
+var competition_module_1 = require("./competitions/competition.module");
+var applicant_module_1 = require("./applicants/applicant.module");
+var login_component_1 = require("./login/login.component");
 var app_component_1 = require("./app.component");
-var forms_1 = require("@angular/forms");
+var menu_component_1 = require("./common/menu.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,9 +23,19 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule,
-            forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent],
+        imports: [
+            platform_browser_1.BrowserModule,
+            shared_module_1.SharedModule,
+            app_routing_module_1.AppRoutingModule,
+            competition_module_1.CompetitionModule,
+            applicant_module_1.ApplicantModule,
+            http_1.HttpModule
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            login_component_1.LoginComponent,
+            menu_component_1.MenuComponent
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
