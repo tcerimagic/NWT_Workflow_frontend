@@ -7,15 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var MenuComponent = (function () {
-    function MenuComponent() {
+var ApplicantProgressSaveComponent = (function () {
+    function ApplicantProgressSaveComponent() {
     }
-    return MenuComponent;
+    return ApplicantProgressSaveComponent;
 }());
-MenuComponent = __decorate([
+ApplicantProgressSaveComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/common/menu.component.html'
+        templateUrl: 'app/applicants/applicant-progress-save.component.html'
     })
-], MenuComponent);
-exports.MenuComponent = MenuComponent;
-//# sourceMappingURL=menu.component.js.map
+], ApplicantProgressSaveComponent);
+exports.ApplicantProgressSaveComponent = ApplicantProgressSaveComponent;
+//# sourceMappingURL=applicant-progress-save.component.js.map

@@ -14,7 +14,7 @@ var ApplicantApplyComponent = (function () {
 }());
 ApplicantApplyComponent = __decorate([
     core_1.Component({
-        templateUrl: 'applicant-apply.component.html'
+        templateUrl: 'app/applicants/applicant-apply.component.html'
     })
 ], ApplicantApplyComponent);
 exports.ApplicantApplyComponent = ApplicantApplyComponent;

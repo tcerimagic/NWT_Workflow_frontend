@@ -14,7 +14,7 @@ var CompetitionListComponent = (function () {
 }());
 CompetitionListComponent = __decorate([
     core_1.Component({
-        templateUrl: 'competition-list.component.html'
+        templateUrl: 'app/competitions/competition-list.component.html'
     })
 ], CompetitionListComponent);
 exports.CompetitionListComponent = CompetitionListComponent;

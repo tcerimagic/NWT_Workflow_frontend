@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
-import { ApplicantProgressComponent } from './applicant-progress.component';
+import { ApplicantProgressDetailComponent } from './applicant-progress-detail.component';
 import { ApplicantApplyComponent } from './applicant-apply.component';
+import { ApplicantProgressSaveComponent } from './applicant-progress-save.component';
 
 
 
@@ -14,7 +15,8 @@ import { ApplicantApplyComponent } from './applicant-apply.component';
   ],
   declarations: [
     ApplicantApplyComponent,
-    ApplicantProgressComponent
+    ApplicantProgressDetailComponent,
+    ApplicantProgressSaveComponent
   ],
 })
 export class ApplicantModule { }

@@ -9,8 +9,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var app_routing_module_1 = require("../app-routing.module");
 var shared_module_1 = require("../shared/shared.module");
-var applicant_progress_component_1 = require("./applicant-progress.component");
+var applicant_progress_detail_component_1 = require("./applicant-progress-detail.component");
 var applicant_apply_component_1 = require("./applicant-apply.component");
+var applicant_progress_save_component_1 = require("./applicant-progress-save.component");
 var ApplicantModule = (function () {
     function ApplicantModule() {
     }
@@ -24,7 +25,8 @@ ApplicantModule = __decorate([
         ],
         declarations: [
             applicant_apply_component_1.ApplicantApplyComponent,
-            applicant_progress_component_1.ApplicantProgressComponent
+            applicant_progress_detail_component_1.ApplicantProgressDetailComponent,
+            applicant_progress_save_component_1.ApplicantProgressSaveComponent
         ],
     })
 ], ApplicantModule);

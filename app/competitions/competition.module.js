@@ -28,6 +28,11 @@ CompetitionModule = __decorate([
             competition_list_component_1.CompetitionListComponent,
             competition_save_component_1.CompetitionSaveComponent
         ],
+        exports: [
+            competition_detail_component_1.CompetitionDetailComponent,
+            competition_list_component_1.CompetitionListComponent,
+            competition_save_component_1.CompetitionSaveComponent
+        ]
     })
 ], CompetitionModule);
 exports.CompetitionModule = CompetitionModule;

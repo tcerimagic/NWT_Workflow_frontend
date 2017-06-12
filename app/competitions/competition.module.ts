@@ -18,5 +18,10 @@ import { CompetitionSaveComponent } from './competition-save.component';
     CompetitionListComponent,
     CompetitionSaveComponent
   ],
+  exports: [
+    CompetitionDetailComponent,
+    CompetitionListComponent,
+    CompetitionSaveComponent
+  ]
 })
 export class CompetitionModule { }

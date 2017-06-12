@@ -14,7 +14,7 @@ var CompetitionSaveComponent = (function () {
 }());
 CompetitionSaveComponent = __decorate([
     core_1.Component({
-        templateUrl: 'competition-save.component.html'
+        templateUrl: 'app/competitions/competition-save.component.html'
     })
 ], CompetitionSaveComponent);
 exports.CompetitionSaveComponent = CompetitionSaveComponent;

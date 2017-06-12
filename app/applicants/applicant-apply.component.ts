@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'applicant-apply.component.html'
+    templateUrl: 'app/applicants/applicant-apply.component.html'
 })
 export class ApplicantApplyComponent {
 

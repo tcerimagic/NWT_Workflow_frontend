@@ -14,7 +14,7 @@ var CompetitionDetailComponent = (function () {
 }());
 CompetitionDetailComponent = __decorate([
     core_1.Component({
-        templateUrl: 'competition-detail.component.html'
+        templateUrl: 'app/competitions/competition-detail.component.html'
     })
 ], CompetitionDetailComponent);
 exports.CompetitionDetailComponent = CompetitionDetailComponent;

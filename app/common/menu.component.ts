@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'menu.component.html'
+    templateUrl: 'app/common/menu.component.html'
 })
 export class MenuComponent {
 
