@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
-
-
+import { RouterModule, Routes } from '@angular/router';
 
 import { ApplicantProgressDetailComponent } from './applicants/applicant-progress-detail.component';
 import { ApplicantApplyComponent } from './applicants/applicant-apply.component';
@@ -16,10 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { AppComponent }  from './app.component';
 import { MenuComponent } from './common/menu.component';
 
-@NgModule({
-  imports: [
-    HttpModule,
-    RouterModule.forRoot([ 
+const routes: Routes = [
       { path: 'applicantapply', component: ApplicantApplyComponent },
       { path: 'applicantprogressdetail', component: ApplicantProgressDetailComponent },
       { path: 'applicantprogresssave', component: ApplicantProgressSaveComponent },
@@ -29,10 +23,10 @@ import { MenuComponent } from './common/menu.component';
       { path: 'login', component: LoginComponent },
       { path: '', redirectTo: 'competitionlist', pathMatch: 'full' },
       { path: '**', redirectTo: 'competitionlist', pathMatch: 'full' }
-    ]),
-    ],
-  
-  declarations: [],
-  exports: [RouterModule]
+]
+
+@NgModule({
+  imports: [ RouterModule.forRoot(routes, { useHash:true }) ],
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
