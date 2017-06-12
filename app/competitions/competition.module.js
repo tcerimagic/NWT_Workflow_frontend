@@ -7,6 +7,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var app_routing_module_1 = require("../app-routing.module");
+var shared_module_1 = require("../shared/shared.module");
+var competition_detail_component_1 = require("./competition-detail.component");
+var competition_list_component_1 = require("./competition-list.component");
+var competition_save_component_1 = require("./competition-save.component");
 var CompetitionModule = (function () {
     function CompetitionModule() {
     }
@@ -14,8 +19,15 @@ var CompetitionModule = (function () {
 }());
 CompetitionModule = __decorate([
     core_1.NgModule({
-        imports: [],
-        declarations: [],
+        imports: [
+            app_routing_module_1.AppRoutingModule,
+            shared_module_1.SharedModule
+        ],
+        declarations: [
+            competition_detail_component_1.CompetitionDetailComponent,
+            competition_list_component_1.CompetitionListComponent,
+            competition_save_component_1.CompetitionSaveComponent
+        ],
     })
 ], CompetitionModule);
 exports.CompetitionModule = CompetitionModule;

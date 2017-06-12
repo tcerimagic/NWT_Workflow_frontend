@@ -7,6 +7,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var app_routing_module_1 = require("../app-routing.module");
+var shared_module_1 = require("../shared/shared.module");
+var applicant_progress_component_1 = require("./applicant-progress.component");
+var applicant_apply_component_1 = require("./applicant-apply.component");
 var ApplicantModule = (function () {
     function ApplicantModule() {
     }
@@ -14,8 +18,14 @@ var ApplicantModule = (function () {
 }());
 ApplicantModule = __decorate([
     core_1.NgModule({
-        imports: [],
-        declarations: [],
+        imports: [
+            shared_module_1.SharedModule,
+            app_routing_module_1.AppRoutingModule
+        ],
+        declarations: [
+            applicant_apply_component_1.ApplicantApplyComponent,
+            applicant_progress_component_1.ApplicantProgressComponent
+        ],
     })
 ], ApplicantModule);
 exports.ApplicantModule = ApplicantModule;
