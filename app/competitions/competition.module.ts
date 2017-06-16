@@ -6,6 +6,10 @@ import { CompetitionDetailComponent } from './competition-detail.component';
 import { CompetitionListComponent } from './competition-list.component';
 import { CompetitionSaveComponent } from './competition-save.component';
 
+import { CompetitionFilterPipe } from './competition-filter.pipe';
+
+
+import { CompetitionService } from './competition.service';
 
 
 @NgModule({
@@ -16,12 +20,16 @@ import { CompetitionSaveComponent } from './competition-save.component';
   declarations: [
     CompetitionDetailComponent,
     CompetitionListComponent,
-    CompetitionSaveComponent
+    CompetitionSaveComponent,
+    CompetitionFilterPipe
   ],
   exports: [
     CompetitionDetailComponent,
     CompetitionListComponent,
     CompetitionSaveComponent
+  ],
+  providers: [
+    CompetitionService
   ]
 })
 export class CompetitionModule { }

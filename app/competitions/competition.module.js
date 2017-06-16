@@ -12,6 +12,8 @@ var shared_module_1 = require("../shared/shared.module");
 var competition_detail_component_1 = require("./competition-detail.component");
 var competition_list_component_1 = require("./competition-list.component");
 var competition_save_component_1 = require("./competition-save.component");
+var competition_filter_pipe_1 = require("./competition-filter.pipe");
+var competition_service_1 = require("./competition.service");
 var CompetitionModule = (function () {
     function CompetitionModule() {
     }
@@ -26,12 +28,16 @@ CompetitionModule = __decorate([
         declarations: [
             competition_detail_component_1.CompetitionDetailComponent,
             competition_list_component_1.CompetitionListComponent,
-            competition_save_component_1.CompetitionSaveComponent
+            competition_save_component_1.CompetitionSaveComponent,
+            competition_filter_pipe_1.CompetitionFilterPipe
         ],
         exports: [
             competition_detail_component_1.CompetitionDetailComponent,
             competition_list_component_1.CompetitionListComponent,
             competition_save_component_1.CompetitionSaveComponent
+        ],
+        providers: [
+            competition_service_1.CompetitionService
         ]
     })
 ], CompetitionModule);
