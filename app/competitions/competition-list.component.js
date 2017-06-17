@@ -24,7 +24,7 @@ var CompetitionListComponent = (function () {
         this._competitionService.getCompetitions().subscribe(function (competitions) { return _this.competitions = competitions; }, function (error) { return _this.errorMessage = error; });
     };
     CompetitionListComponent.prototype.apply = function (id) {
-        this._router.navigate(['/competition', id]);
+        this._router.navigate(['/applicantapply', id]);
     };
     return CompetitionListComponent;
 }());

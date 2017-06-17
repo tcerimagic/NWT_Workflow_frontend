@@ -32,6 +32,6 @@ ngOnInit(): void {
 }
 
 apply(id: number) {
-this._router.navigate(['/competition', id]);
+this._router.navigate(['/applicantapply', id]);
 }
 }
