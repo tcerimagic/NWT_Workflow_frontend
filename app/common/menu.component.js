@@ -9,12 +9,30 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var MenuComponent = (function () {
     function MenuComponent() {
+        this.showMenu = true;
+        this.isLoggedIn = true;
     }
+    /*constructor(private _globalEventsManager: GlobalEventsManager, private _authService: AuthService, private _router: Router) {
+
+        this._globalEventsManager.showMenu.subscribe((mode: boolean) => {
+            this.showMenu = mode;
+        });
+    }*/
+    MenuComponent.prototype.ngOnInit = function () {
+        /*this._globalEventsManager.showMenu.emit(this.authService.isLoggedIn);*/
+    };
+    MenuComponent.prototype.logout = function () {
+        /*this.globalEventsManager.showMenu.emit(false);
+        this.authService.logout();
+        this.router.navigate(['/login']);*/
+    };
     return MenuComponent;
 }());
 MenuComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/common/menu.component.html'
+        selector: 'main-menu',
+        templateUrl: 'app/common/menu.component.html',
+        styleUrls: ['app/common/menu.component.css']
     })
 ], MenuComponent);
 exports.MenuComponent = MenuComponent;

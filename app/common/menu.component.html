@@ -1,0 +1,80 @@
+<!-- <div class="container-fluid container-menu">
+    <nav *ngIf="showMenu" class="navbar navbar-toggleable-md navbar-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a [routerLink]="['/competitionlist']" class="nav-link">Home</a>
+                </li>
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a [routerLink]="['/applicantprogressdetail']" class="nav-link">Applicant Progress Detail</a>
+                </li>
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a class="nav-link" [routerLink]="['/users']">Users Overview</a>
+                </li>
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a [routerLink]="['/tasks']" class="nav-link">Tasks In Progress</a>
+                </li>
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a [routerLink]="['/mySubscriptions']" class="nav-link">My Subscriptions</a>
+                </li>
+                <li [routerLinkActive]="['selected']" class="nav-item active">
+                    <a [routerLink]="['/tasks/all-tasks']" class="nav-link">All Tasks</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-primary button-logout clickable" type="submit" (click)="logout()">LOG OUT</button>
+        </div>
+    </nav>
+</div> -->
+
+<!--
+<nav class='navbar navbar-default'>
+    <div class='container-fluid'>
+        <a class='navbar-brand'>{{pageTitle}}</a>
+        <ul class='nav navbar-nav'>
+            <li><a [routerLink]="['/competitionlist']">Home</a></li>
+            <li><a [routerLink]="['/applicantprogressdetail']">Applicant Progress Detail</a></li>
+            <li><a [routerLink]="['/applicantprogresssave']">Applicant Progress Save</a></li>
+            <li><a [routerLink]="['/applicantapply']">Applicant Apply</a></li>
+            <li><a [routerLink]="['/competitiondetail']">Competition Detail</a></li>
+            <li><a [routerLink]="['/competitionsave']">Competition Save</a></li>
+            <li><a [routerLink]="['/login']">Login</a></li>
+        </ul>
+    </div>
+</nav>
+-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+          <a [routerLink]="['/competitionlist']">Home</a>
+      </li>
+      <li>
+          <a [routerLink]="['/applicantprogressdetail']">Applicant Progress Detail</a>
+      </li>
+      <li>
+          <a [routerLink]="['/applicantprogresssave']">Applicant Progress Save</a>
+      </li>
+      <li>
+          <a [routerLink]="['/applicantapply']">Applicant Apply</a>
+      </li>
+      <li>
+          <a [routerLink]="['/competitiondetail']">Competition Detail</a>
+      </li>
+      <li>
+          <a [routerLink]="['/competitionsave']">Competition Save</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>

@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var GlobalEventsManager = (function () {
     function GlobalEventsManager() {
+        this.showMenu = new core_1.EventEmitter();
     }
     return GlobalEventsManager;
 }());

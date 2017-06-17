@@ -22,7 +22,9 @@ var CompetitionService = (function () {
         this._competitionUrl = 'api/competitions/competitions.json';
     }
     CompetitionService.prototype.getCompetitions = function () {
-        return this._http.get(this._competitionUrl).map(function (response) { return response.json(); }).do(function (data) { return console.log('All: ' + JSON.stringify(data)); }).catch(this.handleError);
+        return this._http.get(this._competitionUrl)
+            .map(function (response) { return response.json(); })
+            .catch(this.handleError);
     };
     CompetitionService.prototype.getCompetition = function (id) {
         return this.getCompetitions().map(function (competitions) { return competitions.find(function (c) { return c.competitionId === id; }); });

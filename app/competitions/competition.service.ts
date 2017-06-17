@@ -18,7 +18,9 @@ private _competitionUrl = 'api/competitions/competitions.json';
 constructor(private _http: Http) {}
 
 getCompetitions(): Observable<ICompetition[]> {
-return this._http.get(this._competitionUrl).map((response: Response) => <ICompetition[]>response.json()).do(data => console.log('All: ' + JSON.stringify(data))).catch(this.handleError);    
+return this._http.get(this._competitionUrl)
+                 .map((response: Response) => <ICompetition[]>response.json())
+                 .catch(this.handleError);    
 }
 
 getCompetition(id: number):  Observable<ICompetition> {

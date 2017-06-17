@@ -15,8 +15,8 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     core_1.Component({
-        selector: 'pm-app',
-        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['/competitionlist']\">Home</a></li>\n                    <li><a [routerLink]=\"['/applicantprogressdetail']\">Applicant Progress Detail</a></li>\n                    <li><a [routerLink]=\"['/applicantprogresssave']\">Applicant Progress Save</a></li>\n                    <li><a [routerLink]=\"['/applicantapply']\">Applicant Apply</a></li>\n                    <li><a [routerLink]=\"['/competitiondetail']\">Competition Detail</a></li>\n                    <li><a [routerLink]=\"['/competitionsave']\">Competition Save</a></li>\n                    <li><a [routerLink]=\"['/login']\">Login</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n     </div>\n     "
+        selector: 'workflow-app',
+        templateUrl: 'app/app.component.html'
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

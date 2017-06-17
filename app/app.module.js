@@ -16,6 +16,7 @@ var applicant_module_1 = require("./applicants/applicant.module");
 var login_component_1 = require("./login/login.component");
 var app_component_1 = require("./app.component");
 var menu_component_1 = require("./common/menu.component");
+var global_events_manager_1 = require("./common/global-events-manager");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -36,7 +37,8 @@ AppModule = __decorate([
             login_component_1.LoginComponent,
             menu_component_1.MenuComponent
         ],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [global_events_manager_1.GlobalEventsManager]
     })
 ], AppModule);
 exports.AppModule = AppModule;

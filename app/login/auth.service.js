@@ -9,7 +9,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AuthService = (function () {
     function AuthService() {
+        this.isLoggedIn = false;
     }
+    AuthService.prototype.login = function () {
+        this.isLoggedIn = true;
+    };
+    AuthService.prototype.logout = function () {
+        this.isLoggedIn = false;
+    };
     return AuthService;
 }());
 AuthService = __decorate([
