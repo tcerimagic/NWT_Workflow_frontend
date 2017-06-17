@@ -4,5 +4,7 @@ export interface ICompetition {
     codeBlockId: number;
     published: string;
     deadline: string;
-    maxNumberApplicants: number
+    maxNumberApplicants: number;
+    description: string;
+    imageUrl: string;
 }

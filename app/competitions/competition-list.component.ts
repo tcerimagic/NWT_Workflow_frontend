@@ -1,4 +1,5 @@
 import { Component, OnInit }  from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { ICompetition } from './competition';
 import { CompetitionService } from './competition.service';
@@ -19,10 +20,18 @@ errorMessage: string;
 
 competitions: ICompetition[];
 
-constructor(private _competitionService: CompetitionService) {
+constructor(
+    private _competitionService: CompetitionService, 
+    private _route: ActivatedRoute,
+    private _router: Router
+            ) {
 
 }
 ngOnInit(): void {
     this._competitionService.getCompetitions().subscribe(competitions => this.competitions = competitions, error => this.errorMessage = <any>error);
+}
+
+apply(id: number) {
+this._router.navigate(['/competition', id]);
 }
 }

@@ -10,15 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var competition_service_1 = require("./competition.service");
 var CompetitionListComponent = (function () {
-    function CompetitionListComponent(_competitionService) {
+    function CompetitionListComponent(_competitionService, _route, _router) {
         this._competitionService = _competitionService;
+        this._route = _route;
+        this._router = _router;
         this.pageTitle = 'Competition List';
     }
     CompetitionListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._competitionService.getCompetitions().subscribe(function (competitions) { return _this.competitions = competitions; }, function (error) { return _this.errorMessage = error; });
+    };
+    CompetitionListComponent.prototype.apply = function (id) {
+        this._router.navigate(['/competition', id]);
     };
     return CompetitionListComponent;
 }());
@@ -27,7 +33,9 @@ CompetitionListComponent = __decorate([
         templateUrl: 'app/competitions/competition-list.component.html',
         styleUrls: ['app/competitions/competition-list.component.css']
     }),
-    __metadata("design:paramtypes", [competition_service_1.CompetitionService])
+    __metadata("design:paramtypes", [competition_service_1.CompetitionService,
+        router_1.ActivatedRoute,
+        router_1.Router])
 ], CompetitionListComponent);
 exports.CompetitionListComponent = CompetitionListComponent;
 //# sourceMappingURL=competition-list.component.js.map

@@ -1,1 +1,46 @@
-<div> Competition detail </div>
+<div class='panel panel-primary' *ngIf='competition'>
+    <div class='panel-heading' style='font-size:large'>
+        {{pageTitle + ': ' + competition.competitionTitle}}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='col-md-3'>Position:</div>
+                    <div class='col-md-6'>{{competition.competitionTitle}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Published:</div>
+                    <div class='col-md-6'>{{competition.published}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Deadline:</div>
+                    <div class='col-md-6'>{{competition.deadline}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Max Number:</div>
+                    <div class='col-md-6'>{{competition.maxNumberApplicants}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Description:</div>
+                    <div class='col-md-6'>{{competition.description}}</div>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                <img class='center-block img-responsive' 
+                     [style.width.px]='200' 
+                     [style.margin.px]='2' 
+                     [src]='competition.imageUrl'
+                     [title]='competition.competitionTitle'>
+            </div>
+        </div>
+    </div>
+
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>
