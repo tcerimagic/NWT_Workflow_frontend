@@ -41,7 +41,10 @@
                         <td>{{ competition.deadline }}</td>
                         <td>{{ competition.maxNumberApplicants }}</td>
                         <td>
-                            
+                            <button class='btn btn-primary'
+                                (click)='apply(competition.competitionId)'>
+                                Apply
+                            </button>
                        </td>
                     </tr>
                 </tbody>

@@ -5,7 +5,9 @@
     "codeBlockId": 1,
     "published": "September 2 2016",
     "deadline": "December 7 2016",
-    "maxNumberApplicants": 10
+    "maxNumberApplicants": 10,
+    "description" : "Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk /n Ovo je neki golemi opis bla blablasdaijablasdaijadaskdlasdkalsdkaslkasldk",
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/41/1a/48/411a4835d38ff899e55ce2802b08329c.jpg"
     },
     {
         "competitionId": 2,
@@ -13,7 +15,9 @@
     "codeBlockId": 1,
     "published": "September 2 2016",
     "deadline": "December 7 2016",
-    "maxNumberApplicants": 10
+    "maxNumberApplicants": 6,
+    "description" : "Ovo je neki blablasdaijadaskdlasdkalsdkasldkalskdasdkasldk",
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/83/90/0a/83900a5b6d403ddbfd4e843ea70828f4.jpg"
     },
     {
         "competitionId": 3,
@@ -21,7 +25,9 @@
     "codeBlockId": 1,
     "published": "September 2 2016",
     "deadline": "December 7 2016",
-    "maxNumberApplicants": 13
+    "maxNumberApplicants": 13,
+    "description" : "Ovo je neki golemi opis bla blaablasdaijadaskdlasdkalsdkaslkasldk",
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/41/1a/48/411a4835d38ff899e55ce2802b08329c.jpg"
     },
     {
         "competitionId": 4,
@@ -29,6 +35,8 @@
     "codeBlockId": 1,
     "published": "September 2 2016",
     "deadline": "December 7 2016",
-    "maxNumberApplicants": 5
+    "maxNumberApplicants": 5,
+    "description" : "Ovo je neki golemi opis bla lablasdaijadaskdlasdablasdaijadaskdlasdkalsdkaslkasldk",
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/83/90/0a/83900a5b6d403ddbfd4e843ea70828f4.jpg"
     }
 ]

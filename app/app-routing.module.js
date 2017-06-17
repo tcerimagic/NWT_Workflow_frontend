@@ -19,12 +19,12 @@ var routes = [
     { path: 'applicantapply', component: applicant_apply_component_1.ApplicantApplyComponent },
     { path: 'applicantprogressdetail', component: applicant_progress_detail_component_1.ApplicantProgressDetailComponent },
     { path: 'applicantprogresssave', component: applicant_progress_save_component_1.ApplicantProgressSaveComponent },
-    { path: 'competitionlist', component: competition_list_component_1.CompetitionListComponent },
-    { path: 'competitiondetail', component: competition_detail_component_1.CompetitionDetailComponent },
+    { path: 'competitions', component: competition_list_component_1.CompetitionListComponent },
+    { path: 'competition/:id', component: competition_detail_component_1.CompetitionDetailComponent },
     { path: 'competitionsave', component: competition_save_component_1.CompetitionSaveComponent },
     { path: 'login', component: login_component_1.LoginComponent },
-    { path: '', redirectTo: 'competitionlist', pathMatch: 'full' },
-    { path: '**', redirectTo: 'competitionlist', pathMatch: 'full' }
+    { path: '', redirectTo: 'competitions', pathMatch: 'full' },
+    { path: '**', redirectTo: 'competitions', pathMatch: 'full' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

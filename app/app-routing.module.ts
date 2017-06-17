@@ -17,12 +17,12 @@ const routes: Routes = [
       { path: 'applicantapply', component: ApplicantApplyComponent },
       { path: 'applicantprogressdetail', component: ApplicantProgressDetailComponent },
       { path: 'applicantprogresssave', component: ApplicantProgressSaveComponent },
-      { path: 'competitionlist', component: CompetitionListComponent },
-      { path: 'competitiondetail', component: CompetitionDetailComponent },
+      { path: 'competitions', component: CompetitionListComponent },
+      { path: 'competition/:id', component: CompetitionDetailComponent },
       { path: 'competitionsave', component: CompetitionSaveComponent },
       { path: 'login', component: LoginComponent },
-      { path: '', redirectTo: 'competitionlist', pathMatch: 'full' },
-      { path: '**', redirectTo: 'competitionlist', pathMatch: 'full' }
+      { path: '', redirectTo: 'competitions', pathMatch: 'full' },
+      { path: '**', redirectTo: 'competitions', pathMatch: 'full' }
 ]
 
 @NgModule({
