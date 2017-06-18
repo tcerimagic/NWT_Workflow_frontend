@@ -1,46 +1,56 @@
-<div class='panel panel-primary' *ngIf='competition'>
-    <div class='panel-heading' style='font-size:large'>
-        {{pageTitle + ': ' + competition.competitionTitle}}
-    </div>
+<div class="container-fluid container-login" >
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 main-column">
+            <div class='panel panel-primary' *ngIf='competition'>
+                <div class='panel-heading' style='font-size:large'>
+                    {{pageTitle + ': ' + competition.competitionTitle}}
+                </div>
 
-    <div class='panel-body'>
-        <div class='row'>
-            <div class='col-md-6'>
-                <div class='row' style="margin-bottom:10px">
-                    <div class='col-md-3' style="font-weight:bold" >Position:</div>
-                    <div class='col-md-6'>{{competition.competitionTitle}}</div>
-                </div>
-                <div class='row' style="margin-bottom:10px">
-                    <div class='col-md-3'style="font-weight:bold" >Published:</div>
-                    <div class='col-md-6'>{{competition.published}}</div>
-                </div>
-                <div class='row' style="margin-bottom:10px">
-                    <div class='col-md-3' style="font-weight:bold">Deadline:</div>
-                    <div class='col-md-6' >{{competition.deadline}}</div>
-                </div>
-                <div class='row' style="margin-bottom:10px">
-                    <div class='col-md-3'style="font-weight:bold" >Available:</div>
-                    <div class='col-md-6'>{{competition.maxNumberApplicants}}</div>
-                </div>
-                <div class='row' style="margin-bottom:10px">
-                    <div class='col-md-3' style="font-weight:bold" >Description:</div>
-                    <div class='col-md-6'>{{competition.description}}</div>
-                </div>
-            </div>
+                <div class='panel-body'>
+                    <div class='row'>
+                        <div class='col-md-6'>
+                            <div class='row' style="margin-bottom:10px">
+                                <div class='col-md-3' style="font-weight:bold" >Position:</div>
+                                <div class='col-md-6'>{{competition.competitionTitle}}</div>
+                            </div>
+                            <div class='row' style="margin-bottom:10px">
+                                <div class='col-md-3'style="font-weight:bold" >Published:</div>
+                                <div class='col-md-6'>{{competition.published}}</div>
+                            </div>
+                            <div class='row' style="margin-bottom:10px">
+                                <div class='col-md-3' style="font-weight:bold">Deadline:</div>
+                                <div class='col-md-6' >{{competition.deadline}}</div>
+                            </div>
+                            <div class='row' style="margin-bottom:10px">
+                                <div class='col-md-3'style="font-weight:bold" >Available:</div>
+                                <div class='col-md-6'>{{competition.maxNumberApplicants}}</div>
+                            </div>
+                            <div class='row' style="margin-bottom:10px">
+                                <div class='col-md-3' style="font-weight:bold" >Description:</div>
+                                <div class='col-md-6'>{{competition.description}}</div>
+                            </div>
+                        </div>
 
-            <div class='col-md-6'>
-                <img class='center-block img-responsive' 
-                     [style.width.px]='200' 
-                     [style.margin.px]='2' 
-                     [src]='competition.imageUrl'
-                     [title]='competition.competitionTitle'>
+                        <div class='col-md-6'>
+                            <img class='center-block img-responsive' 
+                                [style.width.px]='200' 
+                                [style.margin.px]='2' 
+                                [src]='competition.imageUrl'
+                                [title]='competition.competitionTitle'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='panel-footer'>
+                    <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+                        <i class='glyphicon glyphicon-chevron-left'></i> Back
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class='panel-footer'>
-        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
-            <i class='glyphicon glyphicon-chevron-left'></i> Back
-        </a>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+        </div>
     </div>
 </div>

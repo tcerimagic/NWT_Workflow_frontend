@@ -14,7 +14,8 @@ var ApplicantProgressDetailComponent = (function () {
 }());
 ApplicantProgressDetailComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/applicants/applicant-progress-detail.component.html'
+        templateUrl: 'app/applicants/applicant-progress-detail.component.html',
+        styleUrls: ['app/applicants/applicant-progress-detail.component.css']
     })
 ], ApplicantProgressDetailComponent);
 exports.ApplicantProgressDetailComponent = ApplicantProgressDetailComponent;
