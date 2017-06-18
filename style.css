@@ -11,3 +11,7 @@ html, body {
 .container-content {
     padding-bottom: 3%;
 }
+
+.panel {
+    margin-top: 20px;
+}
