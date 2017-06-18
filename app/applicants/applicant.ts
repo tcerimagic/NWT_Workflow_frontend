@@ -10,5 +10,6 @@ export interface IApplicant {
     password: string;
     stage: boolean[];
     motivationalLetter: string;
+    stageNumber: number;
 
 }
