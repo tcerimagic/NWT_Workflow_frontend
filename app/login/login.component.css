@@ -1,0 +1,57 @@
+.login-title {
+    margin-top: 25%;
+    margin-bottom: 5%;
+    font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	font-size: 3.2em;
+	color: white;
+	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.login-block {
+    color: #0f0e0e;
+}
+
+.login-button {
+    text-align: center;
+}
+
+.main-column {
+    text-align: center;
+}
+
+.login-card {
+    display: inline-block;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.card-outter {
+    width: 100%;
+    color: black;
+    box-shadow: 5px 5px 2px #888888;
+    border-style: none;
+    margin-top: 3%;
+   
+}
+
+.card-header {
+    background-color: #4f565c;
+    font-weight: bold;
+}
+
+
+.card {
+    text-align: center;
+    padding: 0;
+}
+
+.bottom-card {  
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
