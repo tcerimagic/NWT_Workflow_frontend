@@ -1,0 +1,13 @@
+html, body {
+    min-height: 100%;
+    height: 100%;
+    background-color: #dddfd4;
+}
+
+.container-menu {
+   padding: 0;
+}
+
+.container-content {
+    padding-bottom: 3%;
+}
