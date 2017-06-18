@@ -9,5 +9,6 @@ export interface IApplicant {
     competitionId: number;
     password: string;
     stage: boolean[];
+    motivationalLetter: string;
 
 }
