@@ -35,3 +35,7 @@ html, body {
 .top-margin {
     margin-top: 10px;
 }
+
+.clickable:hover {
+    cursor: pointer;
+}

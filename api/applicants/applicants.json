@@ -23,8 +23,8 @@
     "educationLevel": "SSS",
     "curriculumVitae": "ima",
     "competitionId": 3,
-    "password": "neki",
-    "stage": [true, true, false, false],
+    "password": "neko",
+    "stage": [true, true, true, false],
     "motivationalLetter": "asdas",
     "stageNumber": 2
 

@@ -1,3 +1,91 @@
-<div>   
-    Applicant progress save
+<div class="container-fluid container-login" >
+        <div *ngIf="applicant" class="row user-info top-margin">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 col-xl-4">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 main-column">
+                <div class="card card-outter login-card">
+                    <div class="card-block login-block">
+                        <div class="applicant-info">Applicant: {{applicant.firstName}} {{applicant.lastName}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 col-xl-4">
+            </div>
+        </div>
+
+    <div *ngIf="applicant" class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 main-column">
+            <section>
+                    <div class="wizard">
+                        <div class="wizard-inner">
+                            <ul class="nav nav-tabs" role="tablist">
+
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[0], 'disabled': !applicant.stage[0]}">
+                                    <div>
+                                        <span class="round-tab clickable" (click)="updateStageList(0)">
+                                            <i class="glyphicon glyphicon-question-sign"></i>
+                                        </span>
+                                        
+                                    </div>
+                                    <div>Technical interview</div>
+                                </li>
+
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[1], 'disabled': !applicant.stage[1]}">
+                                    <div>
+                                        <span class="round-tab clickable" (click)="updateStageList(1)">
+                                            <i class="glyphicon glyphicon-pencil"></i>
+                                        </span>
+                                    </div>
+                                    <div>Technical challenge</div>
+                                </li>
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[2], 'disabled': !applicant.stage[2]}">
+                                    <div>
+                                        <span class="round-tab clickable" (click)="updateStageList(2)">
+                                            <i class="glyphicon glyphicon-user"></i>
+                                        </span>
+                                    </div>
+                                    <div>HR Interview</div>
+                                </li>
+
+                                
+
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[3], 'disabled': !applicant.stage[3]}">
+                                    <div>
+                                        <span class="round-tab clickable" (click)="updateStageList(3)">
+                                            <i class="glyphicon glyphicon-ok"></i>
+                                        </span>
+                                    </div>
+                                    <div>Hired</div>
+                                </li>
+                            </ul>
+                            <div class="connecting-line"></div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 col-xl-4">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 main-column">
+                <div class="card card-outter login-card">
+                    <div class="card-block login-block">
+                        <form id="myForm" #loginForm="ngForm">
+                            <div class="form-group">                 
+                                <button type="submit" class="btn btn-success btn-md btn-block clickable top-margin">Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 col-xl-4">
+            </div>
+        </div>
 </div>
