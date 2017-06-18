@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var ApplicantProgressDetailComponent = (function () {
     function ApplicantProgressDetailComponent() {
+        this.showUserInfo = true;
     }
     return ApplicantProgressDetailComponent;
 }());

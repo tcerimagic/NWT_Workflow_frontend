@@ -138,3 +138,16 @@ span.round-tab:hover {
         left: 35%;
     }
 }
+
+.key-input {
+    margin-top: 10%;
+}
+
+.applicant-info {
+    font-size: 2em;
+    color: black;
+}
+
+.user-info {
+    text-align: center;
+}

@@ -31,3 +31,7 @@ html, body {
 .float-left {
     float: left;
 }
+
+.top-margin {
+    margin-top: 10px;
+}

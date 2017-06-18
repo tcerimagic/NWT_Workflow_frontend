@@ -27,6 +27,10 @@ getApplicant(id: number):  Observable<IApplicant> {
         return this.getApplicants().map((applicants: IApplicant[])=> applicants.find(a => a.applicantId === id));
     }
 
+getApplicantByKey(key: string):  Observable<IApplicant> {
+    return this.getApplicants().map((applicants: IApplicant[])=> applicants.find(a => a.password === key));
+}
+
 getApplicantsByCompetition(id: number):  Observable<IApplicant[]> {
         return this.getApplicants().map((applicants: IApplicant[])=> applicants.filter(a => a.competitionId === id));
     }

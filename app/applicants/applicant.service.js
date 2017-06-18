@@ -29,6 +29,9 @@ var ApplicantService = (function () {
     ApplicantService.prototype.getApplicant = function (id) {
         return this.getApplicants().map(function (applicants) { return applicants.find(function (a) { return a.applicantId === id; }); });
     };
+    ApplicantService.prototype.getApplicantByKey = function (key) {
+        return this.getApplicants().map(function (applicants) { return applicants.find(function (a) { return a.password === key; }); });
+    };
     ApplicantService.prototype.getApplicantsByCompetition = function (id) {
         return this.getApplicants().map(function (applicants) { return applicants.filter(function (a) { return a.competitionId === id; }); });
     };
