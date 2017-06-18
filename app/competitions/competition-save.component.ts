@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
     templateUrl: 'app/competitions/competition-save.component.html'
 })
 export class CompetitionSaveComponent {
-
+    
 }
