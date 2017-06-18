@@ -6,7 +6,7 @@ import { ApplicantProgressDetailComponent } from './applicant-progress-detail.co
 import { ApplicantApplyComponent } from './applicant-apply.component';
 import { ApplicantProgressSaveComponent } from './applicant-progress-save.component';
 
-
+import { ApplicantService } from './applicant.service';
 
 @NgModule({
   imports: [
@@ -18,5 +18,8 @@ import { ApplicantProgressSaveComponent } from './applicant-progress-save.compon
     ApplicantProgressDetailComponent,
     ApplicantProgressSaveComponent
   ],
+  providers: [
+    ApplicantService
+  ]
 })
 export class ApplicantModule { }

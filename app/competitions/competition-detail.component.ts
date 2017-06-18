@@ -5,6 +5,9 @@ import { Subscription }       from 'rxjs/Subscription';
 import { ICompetition } from './competition';
 import { CompetitionService } from './competition.service';
 
+import { IApplicant } from '../applicants/applicant';
+import { ApplicantService } from '../applicants/applicant.service';
+
 @Component({
     templateUrl: 'app/competitions/competition-detail.component.html'
 })
@@ -14,10 +17,12 @@ export class CompetitionDetailComponent implements OnInit, OnDestroy{
     competition: ICompetition;
     errorMessage: string;
     private sub: Subscription;
+    applicants: IApplicant[];
 
     constructor(private _route: ActivatedRoute,
                 private _router: Router,
-                private _competitionService: CompetitionService) {
+                private _competitionService: CompetitionService,
+                private _applicantService: ApplicantService) {
     }
 
 
@@ -26,6 +31,7 @@ export class CompetitionDetailComponent implements OnInit, OnDestroy{
             params => {
                 let id = +params['id'];
                 this.getCompetition(id);
+                this.getApplicantsByCompetition(id);
         });
     }
 
@@ -34,6 +40,10 @@ export class CompetitionDetailComponent implements OnInit, OnDestroy{
         this._competitionService.getCompetition(id).subscribe(
             competition => this.competition = competition,
             error => this.errorMessage = <any>error);
+    }
+    
+    getApplicantsByCompetition(id: number) {
+         this._applicantService.getApplicantsByCompetition(id).subscribe(applicants => this.applicants = applicants)
     }
 
      ngOnDestroy() {
@@ -44,6 +54,10 @@ export class CompetitionDetailComponent implements OnInit, OnDestroy{
 
     onBack(): void {
         this._router.navigate(['/competitions']);
+    }
+
+     edit(id: number) {
+        this._router.navigate(['/applicantprogresssave', id]);
     }
 
 

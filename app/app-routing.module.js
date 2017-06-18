@@ -18,7 +18,7 @@ var login_component_1 = require("./login/login.component");
 var routes = [
     { path: 'applicantapply/:id', component: applicant_apply_component_1.ApplicantApplyComponent },
     { path: 'applicantprogressdetail', component: applicant_progress_detail_component_1.ApplicantProgressDetailComponent },
-    { path: 'applicantprogresssave', component: applicant_progress_save_component_1.ApplicantProgressSaveComponent },
+    { path: 'applicantprogresssave/:id', component: applicant_progress_save_component_1.ApplicantProgressSaveComponent },
     { path: 'competitions', component: competition_list_component_1.CompetitionListComponent },
     { path: 'competition/:id', component: competition_detail_component_1.CompetitionDetailComponent },
     { path: 'competitionsave', component: competition_save_component_1.CompetitionSaveComponent },

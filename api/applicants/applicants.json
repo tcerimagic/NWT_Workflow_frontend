@@ -1,0 +1,32 @@
+[
+ {
+    "applicantId": 1,
+    "firstName": "Tile",
+    "lastName": "Sef",
+    "homeAddress": "string",
+    "email": "tcerimagic@gmail.com",
+    "educationLevel": "SSS",
+    "curriculumVitae": "ima",
+    "competitionId": 1,
+    "password": "neki",
+    "stage": [1],
+    "motivationalLetter": "asdas",
+    "stageNumber": 2
+
+},
+{
+    "applicantId": 2,
+    "firstName": "Emin",
+    "lastName": "Kralj",
+    "homeAddress": "string",
+    "email": "mladikakanjac@gmail.com",
+    "educationLevel": "SSS",
+    "curriculumVitae": "ima",
+    "competitionId": 3,
+    "password": "neki",
+    "stage": [1],
+    "motivationalLetter": "asdas",
+    "stageNumber": 2
+
+}
+]

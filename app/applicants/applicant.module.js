@@ -12,6 +12,7 @@ var shared_module_1 = require("../shared/shared.module");
 var applicant_progress_detail_component_1 = require("./applicant-progress-detail.component");
 var applicant_apply_component_1 = require("./applicant-apply.component");
 var applicant_progress_save_component_1 = require("./applicant-progress-save.component");
+var applicant_service_1 = require("./applicant.service");
 var ApplicantModule = (function () {
     function ApplicantModule() {
     }
@@ -28,6 +29,9 @@ ApplicantModule = __decorate([
             applicant_progress_detail_component_1.ApplicantProgressDetailComponent,
             applicant_progress_save_component_1.ApplicantProgressSaveComponent
         ],
+        providers: [
+            applicant_service_1.ApplicantService
+        ]
     })
 ], ApplicantModule);
 exports.ApplicantModule = ApplicantModule;

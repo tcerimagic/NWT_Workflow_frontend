@@ -7,6 +7,7 @@ import { CompetitionListComponent } from './competition-list.component';
 import { CompetitionSaveComponent } from './competition-save.component';
 
 import { CompetitionFilterPipe } from './competition-filter.pipe';
+import { ApplicantFilterPipe } from '../applicants/applicant-filter.pipe';
 
 
 import { CompetitionService } from './competition.service';
@@ -21,7 +22,8 @@ import { CompetitionService } from './competition.service';
     CompetitionDetailComponent,
     CompetitionListComponent,
     CompetitionSaveComponent,
-    CompetitionFilterPipe
+    CompetitionFilterPipe,
+    ApplicantFilterPipe
   ],
   exports: [
     CompetitionDetailComponent,

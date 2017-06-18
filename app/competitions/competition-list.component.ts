@@ -1,4 +1,4 @@
-import { Component, OnInit }  from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { ICompetition } from './competition';
@@ -14,24 +14,24 @@ import { CompetitionService } from './competition.service';
 
 export class CompetitionListComponent implements OnInit {
 
-pageTitle: string= 'Competition List';
-listFilter: string;
-errorMessage: string;
+    pageTitle: string = 'Competition List';
+    listFilter: string;
+    errorMessage: string;
 
-competitions: ICompetition[];
+    competitions: ICompetition[];
 
-constructor(
-    private _competitionService: CompetitionService, 
-    private _route: ActivatedRoute,
-    private _router: Router
-            ) {
+    constructor(
+        private _competitionService: CompetitionService,
+        private _route: ActivatedRoute,
+        private _router: Router
+    ) {
 
-}
-ngOnInit(): void {
-    this._competitionService.getCompetitions().subscribe(competitions => this.competitions = competitions, error => this.errorMessage = <any>error);
-}
+    }
+    ngOnInit(): void {
+        this._competitionService.getCompetitions().subscribe(competitions => this.competitions = competitions, error => this.errorMessage = <any>error);
+    }
 
-apply(id: number) {
-this._router.navigate(['/applicantapply', id]);
-}
+    apply(id: number) {
+        this._router.navigate(['/applicantapply', id]);
+    }
 }

@@ -16,7 +16,7 @@ import { MenuComponent } from './common/menu.component';
 const routes: Routes = [
       { path: 'applicantapply/:id', component: ApplicantApplyComponent },
       { path: 'applicantprogressdetail', component: ApplicantProgressDetailComponent },
-      { path: 'applicantprogresssave', component: ApplicantProgressSaveComponent },
+      { path: 'applicantprogresssave/:id', component: ApplicantProgressSaveComponent },
       { path: 'competitions', component: CompetitionListComponent },
       { path: 'competition/:id', component: CompetitionDetailComponent },
       { path: 'competitionsave', component: CompetitionSaveComponent },
