@@ -9,7 +9,7 @@
     "curriculumVitae": "ima",
     "competitionId": 1,
     "password": "neki",
-    "stage": [1],
+    "stage": [true, false, false, false],
     "motivationalLetter": "asdas",
     "stageNumber": 2
 
@@ -24,7 +24,7 @@
     "curriculumVitae": "ima",
     "competitionId": 3,
     "password": "neki",
-    "stage": [1],
+    "stage": [true, true, false, false],
     "motivationalLetter": "asdas",
     "stageNumber": 2
 

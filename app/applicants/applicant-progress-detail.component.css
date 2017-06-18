@@ -51,14 +51,6 @@ span.round-tab {
 span.round-tab i{
     color:#555555;
 }
-.wizard li.active span.round-tab {
-    background: #fff;
-    border: 2px solid #5cb85c;
-    
-}
-.wizard li.active span.round-tab i{
-    color: #5cb85c;
-}
 
 .wizard li.disabled span.round-tab {
     background: #fff;
@@ -67,6 +59,15 @@ span.round-tab i{
 }
 .wizard li.disabled span.round-tab i{
     color: #d9534f;
+}
+
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #5cb85c;
+    
+}
+.wizard li.active span.round-tab i{
+    color: #5cb85c;
 }
 
 span.round-tab:hover {

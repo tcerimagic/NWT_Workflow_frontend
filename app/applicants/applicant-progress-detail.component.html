@@ -6,12 +6,12 @@
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 main-column">
                 <div class="card card-outter login-card">
                     <div class="card-block login-block">
-                        <form id="myForm" #loginForm="ngForm" (submit)="login($event, username.value, password.value)">
+                        <form id="myForm" #loginForm="ngForm" (submit)="searchByKey($event)">
                             <div class="form-group">
 
-                                <input type="text" id="username"  #username class="form-control key-input" name="username"  placeholder="Your key" required>
+                                <input type="text" id="password"  [(ngModel)]='inputKey' #username class="form-control key-input" name="username"  placeholder="Your key" required>
                             
-                                <button type="submit" [disabled]="!loginForm.form.valid" class="btn btn-primary btn-md btn-block clickable top-margin">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+                                <button type="submit" class="btn btn-primary btn-md btn-block clickable top-margin">Search <i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </form>
                     </div>
@@ -21,13 +21,13 @@
             </div>
         </div>
 
-        <div *ngIf="showUserInfo" class="row user-info top-margin">
+        <div *ngIf="applicant" class="row user-info top-margin">
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 col-xl-4">
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 main-column">
                 <div class="card card-outter login-card">
                     <div class="card-block login-block">
-                        <div class="applicant-info">Applicant: Emin Šehić</div>
+                        <div class="applicant-info">Applicant: {{applicant.firstName}} {{applicant.lastName}}</div>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-    <div *ngIf="showUserInfo" class="row">
+    <div *ngIf="applicant" class="row">
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 main-column">
@@ -44,7 +44,7 @@
                         <div class="wizard-inner">
                             <ul class="nav nav-tabs" role="tablist">
 
-                                <li role="presentation" class="active">
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[0], 'disabled': !applicant.stage[0]}">
                                     <div title="Test of your knowledge about OOP">
                                         <span class="round-tab">
                                             <i class="glyphicon glyphicon-question-sign"></i>
@@ -54,7 +54,7 @@
                                     <div>Technical interview</div>
                                 </li>
 
-                                <li role="presentation" class="active">
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[1], 'disabled': !applicant.stage[1]}">
                                     <div title="Test of your programming skills in language by your choice">
                                         <span class="round-tab">
                                             <i class="glyphicon glyphicon-pencil"></i>
@@ -62,7 +62,7 @@
                                     </div>
                                     <div>Technical challenge</div>
                                 </li>
-                                <li role="presentation" class="disabled">
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[2], 'disabled': !applicant.stage[2]}">
                                     <div title="Test of your social skills">
                                         <span class="round-tab">
                                             <i class="glyphicon glyphicon-user"></i>
@@ -73,7 +73,7 @@
 
                                 
 
-                                <li role="presentation" class="disabled">
+                                <li role="presentation" [ngClass]="{'active': applicant.stage[3], 'disabled': !applicant.stage[3]}">
                                     <div title="Workflow completed successfuly!">
                                         <span class="round-tab">
                                             <i class="glyphicon glyphicon-ok"></i>
