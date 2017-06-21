@@ -1,108 +1,90 @@
 <div class="container-fluid">
-    <section class="container">
-        <div class="container-page">
-            <div class='panel panel-primary'>
-                <div class='panel-heading' style='font-size:large'>
-                    Application Form
-                </div>
-
-                <div class="panel-body">
-                    <div class="col-md-4">
-                        <div class="form-group col-lg-12">
-                            <label>First Name</label>
-                            <input type="" name="" class="form-control" id="" value="">
-                        </div>
-
-                        <div class="form-group col-lg-12">
-                            <label>Last Name</label>
-                            <input type="password" name="" class="form-control" id="" value="">
-                        </div>
-
-                        <div class="form-group col-lg-12">
-                            <label>Home Address</label>
-                            <input type="password" name="" class="form-control" id="" value="">
-                        </div>
-
-                        <div class="form-group col-lg-12">
-                            <label>Email Address</label>
-                            <input type="" name="" class="form-control" id="" value="">
-                        </div>
-
-                        <div class="form-group col-lg-12">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-    Dropdown
-  </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div class="form-group col-lg-12">
-                            <label for="exampleInputFile">Curriculum Vitae</label>
-                            <input type="file" accept=".pdf, .docx" id="">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Motivational letter</label>
-                            <textarea class="col-lg-12" name="textArea" rows="5" maxlength="300" placeholder="Maximum 300 characters" style="resize: none"></textarea>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-md-8">
-                        <div class='panel panel-primary' *ngIf='competition'>
-                            <div class='panel-heading' style='font-size:large'>
-                                {{competition.competitionTitle}}
-                            </div>
-
-                            <div class='panel-body'>
-                                <div class='row'>
-                                    <div class='col-md-8'>
-                                        <div class='row' style="margin-bottom:10px">
-                                            <div class='col-md-3' style="font-weight:bold">Position:</div>
-                                            <div class='col-md-6'>{{competition.competitionTitle}}</div>
-                                        </div>
-                                        <div class='row' style="margin-bottom:10px">
-                                            <div class='col-md-3' style="font-weight:bold">Published:</div>
-                                            <div class='col-md-6'>{{competition.published}}</div>
-                                        </div>
-                                        <div class='row' style="margin-bottom:10px">
-                                            <div class='col-md-3' style="font-weight:bold">Deadline:</div>
-                                            <div class='col-md-6'>{{competition.deadline}}</div>
-                                        </div>
-                                        <div class='row' style="margin-bottom:10px">
-                                            <div class='col-md-3' style="font-weight:bold">Available:</div>
-                                            <div class='col-md-6'>{{competition.maxNumberApplicants}}</div>
-                                        </div>
-                                        <div class='row' style="margin-bottom:10px">
-                                            <div class='col-md-3' style="font-weight:bold">Description:</div>
-                                            <div class='col-md-6'>{{competition.description}}</div>
-                                        </div>
-                                    </div>
-
-                                    <div class='col-md-4'>
-                                        <img class='center-block img-responsive' [style.width.px]='200' [style.margin.px]='2' [src]='competition.imageUrl' [title]='competition.competitionTitle'>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class='panel-footer'>
-                    <a class='btn btn-default' (click)='onBack()' style='width:80px'>
-                    <i class='glyphicon glyphicon-chevron-left'></i> Back </a>
-
-                    <button style="margin-left:10px; width:80px" type="submit" class="btn btn-primary ">Apply</button>
-                </div>
+<section class="container">
+<div class="container-page">
+   <div class='panel panel-primary'>
+      <div class='panel-heading' style='font-size:large'>
+         Application Form
+      </div>
+      <div class="panel-body">
+         <div class="col-md-4">
+            <div class="form-group col-lg-12">
+               <label>First Name</label>
+               <input type="" name="" class="form-control" id="" value="">
             </div>
-        </div>
+            <div class="form-group col-lg-12">
+               <label>Last Name</label>
+               <input type="password" name="" class="form-control" id="" value="">
+            </div>
+            <div class="form-group col-lg-12">
+               <label>Home Address</label>
+               <input type="password" name="" class="form-control" id="" value="">
+            </div>
+            <div class="form-group col-lg-12">
+               <label>Email Address</label>
+               <input type="" name="" class="form-control" id="" value="">
+            </div>
+            <div class="form-group col-lg-12">
+               <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                     aria-expanded="false">
+                  Dropdown
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                     <a class="dropdown-item" href="#">Action</a>
+                     <a class="dropdown-item" href="#">Another action</a>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group col-lg-12">
+               <label for="exampleInputFile">Curriculum Vitae</label>
+               <input type="file" accept=".pdf, .docx" id="">
+            </div>
+            <div class="form-group col-lg-12">
+               <label>Motivational letter</label>
+               <textarea class="col-lg-12" name="textArea" rows="5" maxlength="300" placeholder="Maximum 300 characters" style="resize: none"></textarea>
+            </div>
+         </div>
+         <div class="col-md-8">
+            <div class='panel panel-primary' *ngIf='competition'>
+               <div class='panel-heading' style='font-size:large'>
+                  {{competition.competitionTitle}}
+               </div>
+               <div class='panel-body'>
+                  <div class='row'>
+                     <div class='col-md-8'>
+                        <div class='row' style="margin-bottom:10px">
+                           <div class='col-md-3' style="font-weight:bold">Position:</div>
+                           <div class='col-md-6'>{{competition.competitionTitle}}</div>
+                        </div>
+                        <div class='row' style="margin-bottom:10px">
+                           <div class='col-md-3' style="font-weight:bold">Published:</div>
+                           <div class='col-md-6'>{{competition.published}}</div>
+                        </div>
+                        <div class='row' style="margin-bottom:10px">
+                           <div class='col-md-3' style="font-weight:bold">Deadline:</div>
+                           <div class='col-md-6'>{{competition.deadline}}</div>
+                        </div>
+                        <div class='row' style="margin-bottom:10px">
+                           <div class='col-md-3' style="font-weight:bold">Available:</div>
+                           <div class='col-md-6'>{{competition.maxNumberApplicants}}</div>
+                        </div>
+                        <div class='row' style="margin-bottom:10px">
+                           <div class='col-md-3' style="font-weight:bold">Description:</div>
+                           <div class='col-md-6'>{{competition.description}}</div>
+                        </div>
+                     </div>
+                     <div class='col-md-4'>
+                        <img class='center-block img-responsive' [style.width.px]='200' [style.margin.px]='2' [src]='competition.imageUrl' [title]='competition.competitionTitle'>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class='panel-footer'>
+         <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+         <i class='glyphicon glyphicon-chevron-left'></i> Back </a>
+         <button style="margin-left:10px; width:80px" type="submit" class="btn btn-primary ">Apply</button>
+      </div>
+   </div>
+</div>

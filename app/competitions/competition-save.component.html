@@ -1,0 +1,71 @@
+<div class="container-fluid container-login">
+   <div class="row">
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 main-column">
+         <div class='panel panel-primary'>
+            <div class='panel-heading' style='font-size:large'>
+               Add New Competition
+            </div>
+            <div class='panel-body'>
+            <form id="myForm" #saveCompetitionForm="ngForm" (submit)="saveCompetition()">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                    </div>         
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <div class="form-group ">
+                    <label>Job Position Title</label>
+                    <input type="" name="" class="form-control" id="" value="" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group ">
+                        <label>Start Date</label>
+                        <input  type="date" [(ngModel)]="competition.published" [value]="competition.published" class="date float-left form-control" id="startDate" name="startDate" #startDate="ngModel" required><br />
+                        </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group ">
+                        <label>Due Date</label>
+                        <input  type="date" [(ngModel)]="competition.deadline" [value]="competition.deadline" class="date float-left form-control" id="dueDate" name="dueDate" #dueDate="ngModel" required><br />
+                        </div> 
+                        </div> 
+                    </div>
+
+                    <div class="form-group">
+                    <label>Job Position Description</label>
+                    <textarea class="col-lg-12" name="textArea" rows="5" maxlength="300" placeholder="Maximum 300 characters" style="resize: none" required></textarea>
+                    </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <button type="submit" class="btn btn-success btn-md btn-block clickable top-margin">Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        
+                        </div> 
+                    </div> 
+            </div>
+            </form>
+            </div>
+            <div class='panel-footer'>
+               <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+               <i class='glyphicon glyphicon-chevron-left'></i> Back
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+      </div>
+   </div>
+</div>
